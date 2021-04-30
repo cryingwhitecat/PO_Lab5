@@ -5,7 +5,7 @@ public class GameConstants {
         return finished;
     }
 
-    public static void setFinished(boolean finished) {
+    public static synchronized void setFinished(boolean finished) {
         GameConstants.finished = finished;
     }
 
